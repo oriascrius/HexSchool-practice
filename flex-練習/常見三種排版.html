@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>常見三種排版</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* ------------------------------------- */
+
+        /* 最上方一欄 */
+        .top-block {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 170px;
+            margin: 10px 0 0 0;
+            background-color: #e7eeea;
+        }
+
+        .three-set-block {
+            display: flex;
+            width: 400px;
+            margin: 0 0 0 30px;
+        }
+
+        .three-set-block img {
+            width: 55px;
+            height: 55px;
+            margin: 15px 0 0 0;
+        }
+
+        .three-set-block-content {
+            width: 300px;
+            margin: 0 0 20px 6px;
+        }
+
+        .three-set-block-content h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #4a6350;
+            margin: 30px 0 0 20px 0;
+        }
+
+        .three-set-block-content p {
+            color: #4a6350;
+            font-size: 15px;
+            line-height: 1.2;
+        }
+
+        /* 中間一欄 */
+        .center-block {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 45px 0 0 0;
+            height: 245px;
+            background-color: #e7eeea;
+        }
+
+        .center-three-set-block {
+            width: 360px;
+        }
+
+        .center-block img {
+            width: 90px;
+            height: 90px;
+            margin: 0 0 0 135px;
+        }
+
+        .center-block h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #4a6350;
+            text-align: center;
+            margin: 10px 12px 20px 0;
+        }
+
+        .center-block p {
+            color: #4a6350;
+            font-size: 15px;
+            line-height: 1.2;
+        }
+
+        /* 最下方一欄 */
+        .bottom-block {
+            margin: 45px 0 0 0;
+            height: 310px;
+            background-color: #e7eeea;
+        }
+
+
+        .bottom-block h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #4a6350;
+            margin: 30px 0 0 10px;
+        }
+
+        .bottom-block p {
+            color: #4a6350;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 20px 0 0 20px;
+        }
+
+
+        /* 最下方一欄內上方區塊  */
+        .bottom-top-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-top-block img {
+            margin: 20px 0 0 0;
+        }
+
+        /* 最下方一欄內下方區塊 */
+        .bottom-bottom-block {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 0 130px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 最上方一欄 -->
+    <div class="top-block">
+        <!-- 左中右欄位 -->
+        <div class="three-set-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-small.png"
+                alt="logo-small"
+            >
+
+            <div class="three-set-block-content">
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </div>
+        </div>
+        <!-- 左中右欄位 -->
+        <div class="three-set-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-small.png"
+                alt="logo-small"
+            >
+
+            <div class="three-set-block-content">
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </div>
+        </div>
+        <!-- 左中右欄位 -->
+        <div class="three-set-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-small.png"
+                alt="logo-small"
+            >
+
+            <div class="three-set-block-content">
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 中間一欄 -->
+    <div class="center-block">
+        <!-- 左中右欄位 -->
+        <div class="center-three-set-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
+                alt="logo-medium"
+            >
+            <h1>為什麼一定要吃甜點?</h1>
+            <p>青山依舊在，幾度夕陽紅。慣
+                看秋月春風，一壺濁酒喜相
+                逢，浪花淘盡英雄。
+                青山依舊在，幾度夕陽紅。慣
+                看秋月春風，一壺濁酒喜相
+                逢，浪花淘盡英雄。</p>
+        </div>
+        <!-- 左中右欄位 -->
+        <div class="center-three-set-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
+                alt="logo-medium"
+            >
+            <h1>為什麼一定要吃甜點?</h1>
+            <p>青山依舊在，幾度夕陽紅。慣
+                看秋月春風，一壺濁酒喜相
+                逢，浪花淘盡英雄。
+                青山依舊在，幾度夕陽紅。慣
+                看秋月春風，一壺濁酒喜相
+                逢，浪花淘盡英雄。</p>
+        </div>
+        <!-- 左中右欄位 -->
+        <div class="center-three-set-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
+                alt="logo-medium"
+            >
+            <h1>為什麼一定要吃甜點?</h1>
+            <p>青山依舊在，幾度夕陽紅。慣
+                看秋月春風，一壺濁酒喜相
+                逢，浪花淘盡英雄。
+                青山依舊在，幾度夕陽紅。慣
+                看秋月春風，一壺濁酒喜相
+                逢，浪花淘盡英雄。</p>
+        </div>
+    </div>
+
+    <!-- 最下方一欄 -->
+    <div class="bottom-block">
+        <!-- 最下方一欄內上方區塊 -->
+        <div class="bottom-top-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-big.png"
+                alt="logo-big"
+            >
+            <div class="bottom-block-content">
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </div>
+        </div>
+        <!-- 最下方一欄內下方區塊 -->
+        <div class="bottom-bottom-block">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/5/logo-big.png"
+                alt="logo-big"
+            >
+            <div class="bottom-block-content">
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>產品列表</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* ------------------------------------- */
+        a {
+            text-decoration: none;
+            color: #415b47;
+            font-size: 25px;
+            font-weight: 700;
+        }
+
+        /* 最外圍一層 */
+        .wrap {
+            display: flex;
+            width: 950px;
+        }
+
+        /* 左邊 類別 */
+        .category {
+            width: 300px;
+            margin: 5px 0 0 5px;
+        }
+
+        .category-one-title {
+            height: 70px;
+            background-color: #37523d;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 70px;
+            text-align: center;
+        }
+
+        .category-two-title {
+            height: 70px;
+            background-color: #e7eeea;
+            line-height: 70px;
+            text-align: center;
+        }
+
+        .category-three-title {
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            border: 1px solid #e7eeea;
+        }
+
+        /* 右邊區塊 產品 */
+        .product-block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 620px;
+            margin: 5px 0 0 15px;
+        }
+
+        /* 產品 */
+        .product {
+            width: 300px;
+        }
+
+        /* 產品 第二排 */
+        .product-two {
+            width: 300px;
+            margin: 30px 0 0 0;
+        }
+
+        .product img {
+            width: 300px;
+            height: 320px;
+        }
+
+        /* 產品 內容 */
+        .product-content {
+            display: flex;
+            height: 65px;
+            font-size: 20px;
+            color: #415b47;
+            font-weight: 700;
+        }
+
+        .product-name {
+            height: 65px;
+            width: 185px;
+            border-left: 1px solid #e7eeea;
+            border-right: 1px solid #e7eeea;
+            line-height: 65px;
+            text-align: center;
+        }
+
+        .product-price {
+            height: 65px;
+            width: 115px;
+            border-right: 1px solid #e7eeea;
+            line-height: 65px;
+            text-align: center;
+        }
+
+        /* 加入購物車按鈕 */
+        .add-bottom {
+            height: 85px;
+            background-color: #e7eeea;
+            font-size: 25px;
+            color: #415b47;
+            font-weight: 700;
+            line-height: 85px;
+            text-align: center;
+        }
+
+        .add-bottom a {
+            display: block;
+            width: 300px;
+            height: 85px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 最外圍一層 -->
+    <div class="wrap">
+        <!-- 左邊 類別 -->
+        <div class="category">
+            <ul>
+                <li class="category-one-title">
+                    <h1>甜點類別</h1>
+                </li>
+                <li class="category-two-title"><a href="#">所有甜點 (45)</a></li>
+                <li class="category-three-title"><a href="#">本日精選 (10)</a></li>
+                <li class="category-three-title"><a href="#">人氣精選 (26)</a></li>
+                <li class="category-three-title"><a href="#">新品上市 (12)</a></li>
+            </ul>
+        </div>
+        <!-- 右邊區塊 產品 -->
+        <div class="product-block">
+            <!-- 產品 -->
+            <div class="product">
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/10/pic1.png"
+                    alt="pic1"
+                >
+                <!-- 產品 內容 -->
+                <div class="product-content">
+                    <h2 class="product-name">焦糖甜甜圈</h2>
+                    <span class="product-price">NT$ 450</span>
+                </div>
+                <!-- 加入購物車按鈕 -->
+                <div class="add-bottom">
+                    <a href="#">加入購物車</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/10/pic2.png"
+                    alt="pic2"
+                >
+                <div class="product-content">
+                    <h2 class="product-name">焦糖甜甜圈</h2>
+                    <span class="product-price">NT$ 450</span>
+                </div>
+                <div class="add-bottom">
+                    <a href="#">加入購物車</a>
+                </div>
+            </div>
+            <!-- 產品 第二排 -->
+            <div class="product-two">
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/10/pic3.png"
+                    alt="pic3"
+                >
+                <div class="product-content">
+                    <h2 class="product-name">焦糖甜甜圈</h2>
+                    <span class="product-price">NT$ 450</span>
+                </div>
+                <div class="add-bottom">
+                    <a href="#">加入購物車</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

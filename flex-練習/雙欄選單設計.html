@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>雙欄選單設計</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* ------------------------------------- */
+        a {
+            text-decoration: none;
+            opacity: 0.5;
+        }
+
+        a:hover {
+            opacity: 1.5;
+        }
+
+        /* 最外圍一層 */
+        .wrap {
+            display: flex;
+            width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* 左方欄位 */
+        .left-block {
+            width: 325px;
+            background-color: #e7eeea;
+        }
+
+        .left-block a {
+            display: block;
+            color: #677c6c;
+            font-size: 25px;
+            font-weight: 700;
+            margin: 38px auto;
+            text-align: center;
+        }
+
+        /* 左方欄位內容 */
+        .left-block-content {
+            padding: 65px 0 0 10px;
+        }
+
+        /* 右方欄位中上方區塊 */
+        .right-top-block {
+            width: 600px;
+            margin-left: 90px;
+        }
+
+        .right-top-block h1 {
+            font-size: 25px;
+            font-weight: 900;
+            color: #37523d;
+            margin: 80px 0 0 0;
+        }
+
+        .right-top-block p {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 38px 0 0 0;
+            line-height: 1.2;
+        }
+
+        /* 右方欄位中下方區塊 */
+        .right-bottom-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 600px;
+            margin: 38px 0 0 0;
+        }
+
+        .right-bottom-block img {
+            width: 196px;
+            height: 160px;
+            margin: 0 0 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 最外圍一層 -->
+    <div class="wrap">
+        <!-- 左方欄位 -->
+        <div class="left-block">
+            <!-- 左方欄位內容 -->
+            <div class="left-block-content">
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/3/logo.png"
+                    alt="logo"
+                >
+                <h2><a href="#">回到首頁</a></h2>
+                <h2><a href="#">關於我們</a></h2>
+                <h2><a href="#">熱銷產品</a></h2>
+                <h2><a href="#">購物車</a></h2>
+            </div>
+        </div>
+        <!-- 右方欄位中上方區塊 -->
+        <div class="right-top-block">
+            <h1>甜甜點點點</h1>
+            <p> 為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+            </p>
+            <p>
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+                為什麼選擇了做甜點為什麼選擇了做甜點
+            </p>
+            <!-- 右方欄位中下方區塊 -->
+            <div class="right-bottom-block">
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/3/pic.png"
+                    alt="pic"
+                >
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/3/pic.png"
+                    alt="pic"
+                >
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/3/pic.png"
+                    alt="pic"
+                >
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/3/pic.png"
+                    alt="pic"
+                >
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/3/pic.png"
+                    alt="pic"
+                >
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/3/pic.png"
+                    alt="pic"
+                >
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
