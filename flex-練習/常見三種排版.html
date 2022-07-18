@@ -150,114 +150,106 @@
         }
 
         /* ------------------------------------- */
+        body {
+            line-height: 1.4;
+            font-weight: 700;
+            color: #4a6350;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
 
         /* 最上方一欄 */
         .top-block {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 170px;
             margin: 10px 0 0 0;
             background-color: #e7eeea;
         }
 
         .three-set-block {
             display: flex;
+            justify-content: center;
             width: 400px;
-            margin: 0 0 0 30px;
+            padding: 20px 0;
         }
 
         .three-set-block img {
-            width: 55px;
             height: 55px;
-            margin: 15px 0 0 0;
+            width: 55px;
+            padding: 0 10px 0 0;
         }
 
         .three-set-block-content {
             width: 300px;
-            margin: 0 0 20px 6px;
         }
 
+        /* 這邊給上方 padding ，可以讓左邊的圖往上 */
         .three-set-block-content h1 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #4a6350;
-            margin: 30px 0 0 20px 0;
-        }
-
-        .three-set-block-content p {
-            color: #4a6350;
-            font-size: 15px;
-            line-height: 1.2;
+            padding: 15px 0 15px 0;
         }
 
         /* 中間一欄 */
-        .center-block {
+        .center-block ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
             margin: 45px 0 0 0;
-            height: 245px;
             background-color: #e7eeea;
+            text-align: center;
         }
 
-        .center-three-set-block {
-            width: 360px;
+
+        /* 請問助教，左右留白 用 width 還是 padding 或是都可以呢??
+           還是之後 rwd 使用自適應 rem 或是 % 會更好
+        */
+        .center-block li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /* width: 360px; */
+            padding: 20px 30px;
         }
 
         .center-block img {
             width: 90px;
             height: 90px;
-            margin: 0 0 0 135px;
         }
 
         .center-block h1 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #4a6350;
-            text-align: center;
-            margin: 10px 12px 20px 0;
+            padding: 10px 0 20px 0;
         }
 
-        .center-block p {
-            color: #4a6350;
-            font-size: 15px;
-            line-height: 1.2;
-        }
 
         /* 最下方一欄 */
         .bottom-block {
             margin: 45px 0 0 0;
-            height: 310px;
             background-color: #e7eeea;
+            padding: 20px;
         }
 
 
         .bottom-block h1 {
-            font-size: 20px;
-            font-weight: 700;
-            color: #4a6350;
-            margin: 30px 0 0 10px;
+            padding: 0 0 15px 0;
         }
-
-        .bottom-block p {
-            color: #4a6350;
-            font-size: 15px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin: 20px 0 0 20px;
-        }
-
 
         /* 最下方一欄內上方區塊  */
         .bottom-top-block {
             display: flex;
             align-items: center;
-            justify-content: center;
-        }
-
-        .bottom-top-block img {
-            margin: 20px 0 0 0;
+            padding: 0 60px 0 0;
         }
 
         /* 最下方一欄內下方區塊 */
@@ -265,8 +257,11 @@
             display: flex;
             flex-direction: row-reverse;
             align-items: center;
-            justify-content: center;
-            margin: 0 0 0 130px;
+            padding: 0 0 0 60px;
+        }
+
+        .bottom-block-content {
+            padding: 25px 10px 0 10px;
         }
     </style>
 </head>
@@ -332,47 +327,47 @@
     <!-- 中間一欄 -->
     <div class="center-block">
         <!-- 左中右欄位 -->
-        <div class="center-three-set-block">
-            <img
-                src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
-                alt="logo-medium"
-            >
-            <h1>為什麼一定要吃甜點?</h1>
-            <p>青山依舊在，幾度夕陽紅。慣
-                看秋月春風，一壺濁酒喜相
-                逢，浪花淘盡英雄。
-                青山依舊在，幾度夕陽紅。慣
-                看秋月春風，一壺濁酒喜相
-                逢，浪花淘盡英雄。</p>
-        </div>
-        <!-- 左中右欄位 -->
-        <div class="center-three-set-block">
-            <img
-                src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
-                alt="logo-medium"
-            >
-            <h1>為什麼一定要吃甜點?</h1>
-            <p>青山依舊在，幾度夕陽紅。慣
-                看秋月春風，一壺濁酒喜相
-                逢，浪花淘盡英雄。
-                青山依舊在，幾度夕陽紅。慣
-                看秋月春風，一壺濁酒喜相
-                逢，浪花淘盡英雄。</p>
-        </div>
-        <!-- 左中右欄位 -->
-        <div class="center-three-set-block">
-            <img
-                src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
-                alt="logo-medium"
-            >
-            <h1>為什麼一定要吃甜點?</h1>
-            <p>青山依舊在，幾度夕陽紅。慣
-                看秋月春風，一壺濁酒喜相
-                逢，浪花淘盡英雄。
-                青山依舊在，幾度夕陽紅。慣
-                看秋月春風，一壺濁酒喜相
-                逢，浪花淘盡英雄。</p>
-        </div>
+        <ul>
+            <li>
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
+                    alt="logo-medium"
+                >
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </li>
+            <li>
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
+                    alt="logo-medium"
+                >
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </li>
+            <li>
+                <img
+                    src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
+                    alt="logo-medium"
+                >
+                <h1>為什麼一定要吃甜點?</h1>
+                <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。</p>
+            </li>
+        </ul>
     </div>
 
     <!-- 最下方一欄 -->
@@ -390,6 +385,9 @@
                     逢，浪花淘盡英雄。
                     青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。</p>
             </div>
         </div>
@@ -402,6 +400,9 @@
             <div class="bottom-block-content">
                 <h1>為什麼一定要吃甜點?</h1>
                 <p>青山依舊在，幾度夕陽紅。慣
+                    看秋月春風，一壺濁酒喜相
+                    逢，浪花淘盡英雄。
+                    青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
                     青山依舊在，幾度夕陽紅。慣

@@ -150,48 +150,55 @@
         }
 
         /* ------------------------------------- */
-        a {
+        body {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        a,
+        h1 {
             text-decoration: none;
             color: #415b47;
             font-size: 25px;
-            font-weight: 700;
         }
 
         /* 最外圍一層 */
         .wrap {
             display: flex;
             width: 950px;
+            margin: 0 auto;
         }
 
-        /* 左邊 類別 */
-        .category {
+        /* 甜點類別 清單 */
+        .category-list {
             width: 300px;
-            margin: 5px 0 0 5px;
+            text-align: center;
+            margin: 5px 5px 0 0;
         }
 
-        .category-one-title {
+        .category-list h1 {
             height: 70px;
             background-color: #37523d;
             color: #ffffff;
-            font-size: 25px;
-            font-weight: 700;
             line-height: 70px;
-            text-align: center;
         }
 
-        .category-two-title {
-            height: 70px;
-            background-color: #e7eeea;
-            line-height: 70px;
-            text-align: center;
-        }
-
-        .category-three-title {
+        /* 注意邊線重疊 */
+        .category-list li {
             height: 70px;
             line-height: 70px;
-            text-align: center;
             border: 1px solid #e7eeea;
+            border-top: 0;
         }
+
+        .category-list li a:hover h2 {
+            background-color: #e7eeea;
+        }
+
 
         /* 右邊區塊 產品 */
         .product-block {
@@ -260,22 +267,37 @@
             width: 300px;
             height: 85px;
         }
+
+        .add-bottom a:hover {
+            color: rgb(0, 249, 58);
+            background-color: #ffffff;
+        }
     </style>
 </head>
 
 <body>
     <!-- 最外圍一層 -->
     <div class="wrap">
-        <!-- 左邊 類別 -->
-        <div class="category">
+        <!-- 甜點類別 清單 -->
+        <div class="category-list">
+            <h1>甜點類別</h1>
             <ul>
-                <li class="category-one-title">
-                    <h1>甜點類別</h1>
+                <li><a href="#">
+                        <h2>所有甜點 (45)</h2>
+                    </a>
                 </li>
-                <li class="category-two-title"><a href="#">所有甜點 (45)</a></li>
-                <li class="category-three-title"><a href="#">本日精選 (10)</a></li>
-                <li class="category-three-title"><a href="#">人氣精選 (26)</a></li>
-                <li class="category-three-title"><a href="#">新品上市 (12)</a></li>
+                <li><a href="#">
+                        <h2>本日精選 (10)</h2>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <h2>人氣精選 (26)</h2>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <h2>新品上市 (12)</h2>
+                    </a>
+                </li>
             </ul>
         </div>
         <!-- 右邊區塊 產品 -->
@@ -284,7 +306,7 @@
             <div class="product">
                 <img
                     src="https://hexschool.github.io/flexImgUrl/10/pic1.png"
-                    alt="pic1"
+                    alt="product photos"
                 >
                 <!-- 產品 內容 -->
                 <div class="product-content">
@@ -300,7 +322,7 @@
             <div class="product">
                 <img
                     src="https://hexschool.github.io/flexImgUrl/10/pic2.png"
-                    alt="pic2"
+                    alt="product photos"
                 >
                 <div class="product-content">
                     <h2 class="product-name">焦糖甜甜圈</h2>
@@ -314,7 +336,7 @@
             <div class="product-two">
                 <img
                     src="https://hexschool.github.io/flexImgUrl/10/pic3.png"
-                    alt="pic3"
+                    alt="product photos"
                 >
                 <div class="product-content">
                     <h2 class="product-name">焦糖甜甜圈</h2>

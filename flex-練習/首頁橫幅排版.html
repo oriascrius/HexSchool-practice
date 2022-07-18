@@ -150,6 +150,15 @@
         }
 
         /* ------------------------------------- */
+        body {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
         a {
             text-decoration: none;
             opacity: 0.5;
@@ -165,7 +174,7 @@
             margin: 0 auto;
         }
 
-        /* 上面區塊 */
+        /* 表頭 */
         .header {
             display: flex;
             flex-direction: column;
@@ -178,12 +187,11 @@
 
         .header h1 {
             font-size: 25px;
-            font-weight: 700;
             color: #37523d;
             margin: 25px 0 0 0;
         }
 
-        /* 最下方區塊 */
+        /* 頁尾 */
         .footer {
             display: flex;
             justify-content: space-between;
@@ -192,12 +200,12 @@
         }
 
         .footer img {
-            width: 220px;
+            width: 250px;
             height: 50px;
             margin: 0 0 0 50px;
         }
 
-        /* 最下方區塊內 a 連結 */
+        /* 頁尾 內 a 連結 */
         .footer-content {
             display: flex;
             justify-content: space-around;
@@ -213,7 +221,6 @@
             height: 60px;
             line-height: 60px;
             color: #2e2e2e;
-            font-weight: 700;
             text-align: center;
         }
     </style>
@@ -222,7 +229,7 @@
 <body>
     <!-- 最外圍一層 -->
     <div class="wrap">
-        <!-- 上面區塊 -->
+        <!-- 表頭 -->
         <div class="header">
 
             <img
@@ -232,13 +239,13 @@
             <h1>今天是個吃甜點的好日子。</h1>
         </div>
 
-        <!-- 最下方區塊 -->
+        <!-- 頁尾 -->
         <div class="footer">
             <img
                 src="https://hexschool.github.io/flexImgUrl/7/footerLogo.png"
                 alt="footerLogo"
             >
-            <!-- 最下方區塊內 a 連結 -->
+            <!-- 頁尾 內 a 連結 -->
             <ul class="footer-content">
                 <li><a href="#">回首頁</a></li>
                 <li><a href="#">關於我們</a></li>

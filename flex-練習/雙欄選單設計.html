@@ -150,6 +150,15 @@
         }
 
         /* ------------------------------------- */
+        body {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
         a {
             text-decoration: none;
             opacity: 0.5;
@@ -159,6 +168,11 @@
             opacity: 1.5;
         }
 
+        img {
+            object-fit: cover;
+        }
+
+
         /* 最外圍一層 */
         .wrap {
             display: flex;
@@ -166,13 +180,14 @@
             margin: 0 auto;
         }
 
-        /* 左方欄位 */
-        .left-block {
+        /* 導航清單 */
+        .nav-list {
             width: 325px;
             background-color: #e7eeea;
+            padding: 65px 0 0 10px;
         }
 
-        .left-block a {
+        .nav-list a {
             display: block;
             color: #677c6c;
             font-size: 25px;
@@ -181,33 +196,25 @@
             text-align: center;
         }
 
-        /* 左方欄位內容 */
-        .left-block-content {
-            padding: 65px 0 0 10px;
-        }
-
-        /* 右方欄位中上方區塊 */
-        .right-top-block {
+        /* 內容 */
+        .content {
             width: 600px;
-            margin-left: 90px;
+            margin: 0 0 0 90px;
         }
 
-        .right-top-block h1 {
+        .content h1 {
             font-size: 25px;
-            font-weight: 900;
             color: #37523d;
             margin: 80px 0 0 0;
         }
 
-        .right-top-block p {
+        .content p {
             font-size: 20px;
-            font-weight: 600;
             margin: 38px 0 0 0;
-            line-height: 1.2;
         }
 
-        /* 右方欄位中下方區塊 */
-        .right-bottom-block {
+        /* 內容 圖片區塊 */
+        .content-img-block {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -215,7 +222,7 @@
             margin: 38px 0 0 0;
         }
 
-        .right-bottom-block img {
+        .content-img-block img {
             width: 196px;
             height: 160px;
             margin: 0 0 5px 0;
@@ -226,22 +233,19 @@
 <body>
     <!-- 最外圍一層 -->
     <div class="wrap">
-        <!-- 左方欄位 -->
-        <div class="left-block">
-            <!-- 左方欄位內容 -->
-            <div class="left-block-content">
-                <img
-                    src="https://hexschool.github.io/flexImgUrl/3/logo.png"
-                    alt="logo"
-                >
-                <h2><a href="#">回到首頁</a></h2>
-                <h2><a href="#">關於我們</a></h2>
-                <h2><a href="#">熱銷產品</a></h2>
-                <h2><a href="#">購物車</a></h2>
-            </div>
+        <!-- 導航清單 -->
+        <div class="nav-list">
+            <img
+                src="https://hexschool.github.io/flexImgUrl/3/logo.png"
+                alt="logo"
+            >
+            <h2><a href="#">回到首頁</a></h2>
+            <h2><a href="#">關於我們</a></h2>
+            <h2><a href="#">熱銷產品</a></h2>
+            <h2><a href="#">購物車</a></h2>
         </div>
-        <!-- 右方欄位中上方區塊 -->
-        <div class="right-top-block">
+        <!-- 內容 -->
+        <div class="content">
             <h1>甜甜點點點</h1>
             <p> 為什麼選擇了做甜點為什麼選擇了做甜點
                 為什麼選擇了做甜點為什麼選擇了做甜點
@@ -257,31 +261,31 @@
                 為什麼選擇了做甜點為什麼選擇了做甜點
                 為什麼選擇了做甜點為什麼選擇了做甜點
             </p>
-            <!-- 右方欄位中下方區塊 -->
-            <div class="right-bottom-block">
+            <!-- 內容 圖片區塊 -->
+            <div class="content-img-block">
                 <img
                     src="https://hexschool.github.io/flexImgUrl/3/pic.png"
-                    alt="pic"
+                    alt="product photos"
                 >
                 <img
                     src="https://hexschool.github.io/flexImgUrl/3/pic.png"
-                    alt="pic"
+                    alt="product photos"
                 >
                 <img
                     src="https://hexschool.github.io/flexImgUrl/3/pic.png"
-                    alt="pic"
+                    alt="product photos"
                 >
                 <img
                     src="https://hexschool.github.io/flexImgUrl/3/pic.png"
-                    alt="pic"
+                    alt="product photos"
                 >
                 <img
                     src="https://hexschool.github.io/flexImgUrl/3/pic.png"
-                    alt="pic"
+                    alt="product photos"
                 >
                 <img
                     src="https://hexschool.github.io/flexImgUrl/3/pic.png"
-                    alt="pic"
+                    alt="product photos"
                 >
             </div>
         </div>

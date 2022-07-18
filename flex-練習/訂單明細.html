@@ -150,89 +150,93 @@
         }
 
         /* ------------------------------------- */
+        body {
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
         h1,
         h2,
-        h3 {
+        h3,
+        h4 {
             color: #829886;
         }
 
         h1 {
             font-size: 25px;
-            font-weight: 700;
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 25px;
         }
 
         h3 {
             font-size: 18px;
         }
 
+        h4 {
+            font-size: 16px;
+        }
+
+
         /* 最外圍一層 */
         .wrap {
             width: 360px;
-            height: 560px;
             margin: 0 auto;
         }
 
         /* 訂單摘要 */
         .order-summary {
             width: 300px;
-            height: 200px;
             margin: 5px 5px;
             border: 1px solid #e7eeea;
         }
 
-        /* 訂單摘要標題 */
+        /* 訂單摘要 標題 */
         .order-summary-title {
-            height: 70px;
             background-color: #e7eeea;
             text-align: center;
             line-height: 70px;
         }
 
-
-        /* 訂單摘要 內容 */
-        .order-summary-content {
-            height: 130px;
-        }
-
-        /* 訂單摘要 計算結果 li */
-        .order-summary-result {
+        /* 訂單摘要 內的 計算結果 */
+        .order-summary li {
             display: flex;
             justify-content: space-between;
-            margin: 15px 15px 0;
+            padding: 15px 15px;
         }
+
 
         /* 購物清單 */
         .order-list {
             justify-content: space-around;
             width: 300px;
-            height: 350px;
             border: 1px solid #e7eeea;
             margin: 20px 0 0 5px;
         }
 
         /* 購物清單標題 */
         .order-list-title {
-            height: 70px;
             background-color: #e7eeea;
             text-align: center;
             line-height: 70px;
         }
 
 
-        /* 購物清單 計算結果 li */
-        .order-list-result {
+        /* 購物清單 內的 商品列表  */
+        .order-list li {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin: 15px 15px 0;
+            padding: 15px 15px 0;
         }
 
-        .order-list-result h1 {
-            margin: 6px 0 0 0;
+        .order-list li h3 {
+            padding: 0 0 10px 0;
         }
     </style>
 </head>
@@ -246,20 +250,18 @@
             <div class="order-summary-title">
                 <h1>訂單摘要</h1>
             </div>
-            <!-- 訂單摘要 內容 -->
-            <ul class="order-summary-content">
-                <!-- 訂單摘要 計算結果 li -->
-                <li class="order-summary-result">
-                    <h3>小計</h3>
-                    <h3>NT$ 2,700</h3>
+            <ul>
+                <li>
+                    <h4>小計</h4>
+                    <h4>NT$ 2,700</h4>
                 </li>
-                <li class="order-summary-result">
-                    <h2>運費</h2>
-                    <h2>NT$ 300</h2>
+                <li>
+                    <h3>運費</h3>
+                    <h3>NT$ 300</h3>
                 </li>
-                <li class="order-summary-result">
-                    <h1>總計</h1>
-                    <h1>NT$ 3,000</h1>
+                <li>
+                    <h2>總計</h2>
+                    <h2>NT$ 3,000</h2>
                 </li>
             </ul>
 
@@ -271,38 +273,36 @@
             <div class="order-list-title">
                 <h1>購物清單</h1>
             </div>
-            <!-- 購物清單 內容 -->
-            <ul class="order-list-content">
-                <!-- 購物清單 計算結果 li -->
-                <li class="order-list-result">
+            <ul>
+                <li>
                     <img
                         src="https://hexschool.github.io/flexImgUrl/9/pic.png"
-                        alt="pic"
+                        alt="Product photos"
                     >
 
                     <div>
                         <h3>焦糖瑪卡龍 (2)</h3>
-                        <h1>NT$ 900</h1>
+                        <h2>NT$ 900</h2>
                     </div>
                 </li>
-                <li class="order-list-result">
+                <li>
                     <img
                         src="https://hexschool.github.io/flexImgUrl/9/pic.png"
-                        alt="pic"
+                        alt="Product photos"
                     >
                     <div>
                         <h3>焦糖瑪卡龍 (2)</h3>
-                        <h1>NT$ 900</h1>
+                        <h2>NT$ 900</h2>
                     </div>
                 </li>
-                <li class="order-list-result">
+                <li>
                     <img
                         src="https://hexschool.github.io/flexImgUrl/9/pic.png"
-                        alt="pic"
+                        alt="Product photos"
                     >
                     <div>
                         <h3>焦糖瑪卡龍 (2)</h3>
-                        <h1>NT$ 900</h1>
+                        <h2>NT$ 900</h2>
                     </div>
                 </li>
             </ul>
