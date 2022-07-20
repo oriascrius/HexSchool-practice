@@ -160,10 +160,6 @@
             object-fit: cover;
         }
 
-        h1 {
-            font-size: 20px;
-        }
-
         p {
             font-size: 15px;
         }
@@ -186,8 +182,6 @@
         }
 
         .three-set-block img {
-            height: 55px;
-            width: 55px;
             padding: 0 10px 0 0;
         }
 
@@ -195,8 +189,9 @@
             width: 300px;
         }
 
-        /* 這邊給上方 padding ，可以讓左邊的圖往上 */
-        .three-set-block-content h1 {
+
+        .three-set-block-content div {
+            font-size: 20px;
             padding: 15px 0 15px 0;
         }
 
@@ -211,24 +206,16 @@
         }
 
 
-        /* 請問助教，左右留白 用 width 還是 padding 或是都可以呢??
-           還是之後 rwd 使用自適應 rem 或是 % 會更好
-        */
         .center-block li {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            /* width: 360px; */
-            padding: 20px 30px;
+            padding: 20px 60px;
         }
 
-        .center-block img {
-            width: 90px;
-            height: 90px;
-        }
-
-        .center-block h1 {
+        .center-block div {
+            font-size: 20px;
             padding: 10px 0 20px 0;
         }
 
@@ -241,9 +228,6 @@
         }
 
 
-        .bottom-block h1 {
-            padding: 0 0 15px 0;
-        }
 
         /* 最下方一欄內上方區塊  */
         .bottom-top-block {
@@ -260,6 +244,11 @@
             padding: 0 0 0 60px;
         }
 
+        .bottom-block-content div {
+            font-size: 20px;
+            padding: 0 0 15px 0;
+        }
+
         .bottom-block-content {
             padding: 25px 10px 0 10px;
         }
@@ -273,12 +262,14 @@
         <!-- 左中右欄位 -->
         <div class="three-set-block">
             <img
+                width="60"
+                height="60"
                 src="https://hexschool.github.io/flexImgUrl/5/logo-small.png"
                 alt="logo-small"
             >
 
             <div class="three-set-block-content">
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
@@ -290,12 +281,14 @@
         <!-- 左中右欄位 -->
         <div class="three-set-block">
             <img
+                width="60"
+                height="60"
                 src="https://hexschool.github.io/flexImgUrl/5/logo-small.png"
                 alt="logo-small"
             >
 
             <div class="three-set-block-content">
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
@@ -307,12 +300,14 @@
         <!-- 左中右欄位 -->
         <div class="three-set-block">
             <img
+                width="60"
+                height="60"
                 src="https://hexschool.github.io/flexImgUrl/5/logo-small.png"
                 alt="logo-small"
             >
 
             <div class="three-set-block-content">
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
@@ -330,10 +325,12 @@
         <ul>
             <li>
                 <img
+                    width="101"
+                    height="95"
                     src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
                     alt="logo-medium"
                 >
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
@@ -343,10 +340,12 @@
             </li>
             <li>
                 <img
+                    width="101"
+                    height="95"
                     src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
                     alt="logo-medium"
                 >
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
@@ -356,10 +355,12 @@
             </li>
             <li>
                 <img
+                    width="101"
+                    height="95"
                     src="https://hexschool.github.io/flexImgUrl/5/logo-medium.png"
                     alt="logo-medium"
                 >
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
@@ -375,11 +376,13 @@
         <!-- 最下方一欄內上方區塊 -->
         <div class="bottom-top-block">
             <img
+                width="139"
+                height="138"
                 src="https://hexschool.github.io/flexImgUrl/5/logo-big.png"
                 alt="logo-big"
             >
             <div class="bottom-block-content">
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。
@@ -394,11 +397,13 @@
         <!-- 最下方一欄內下方區塊 -->
         <div class="bottom-bottom-block">
             <img
+                width="139"
+                height="138"
                 src="https://hexschool.github.io/flexImgUrl/5/logo-big.png"
                 alt="logo-big"
             >
             <div class="bottom-block-content">
-                <h1>為什麼一定要吃甜點?</h1>
+                <div>為什麼一定要吃甜點?</div>
                 <p>青山依舊在，幾度夕陽紅。慣
                     看秋月春風，一壺濁酒喜相
                     逢，浪花淘盡英雄。

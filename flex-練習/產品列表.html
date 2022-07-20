@@ -195,8 +195,12 @@
             border-top: 0;
         }
 
-        .category-list li a:hover h2 {
-            background-color: #e7eeea;
+        .category-list li a {
+            display: block;
+        }
+
+        .category-list li a:hover {
+            background-color: #99ddb8;
         }
 
 
@@ -218,11 +222,6 @@
         .product-two {
             width: 300px;
             margin: 30px 0 0 0;
-        }
-
-        .product img {
-            width: 300px;
-            height: 320px;
         }
 
         /* 產品 內容 */
@@ -283,19 +282,19 @@
             <h1>甜點類別</h1>
             <ul>
                 <li><a href="#">
-                        <h2>所有甜點 (45)</h2>
+                        所有甜點 (45)
                     </a>
                 </li>
                 <li><a href="#">
-                        <h2>本日精選 (10)</h2>
+                        本日精選 (10)
                     </a>
                 </li>
                 <li><a href="#">
-                        <h2>人氣精選 (26)</h2>
+                        人氣精選 (26)
                     </a>
                 </li>
                 <li><a href="#">
-                        <h2>新品上市 (12)</h2>
+                        新品上市 (12)
                     </a>
                 </li>
             </ul>
@@ -305,12 +304,14 @@
             <!-- 產品 -->
             <div class="product">
                 <img
+                    width="300"
+                    height="315"
                     src="https://hexschool.github.io/flexImgUrl/10/pic1.png"
                     alt="product photos"
                 >
                 <!-- 產品 內容 -->
                 <div class="product-content">
-                    <h2 class="product-name">焦糖甜甜圈</h2>
+                    <div class="product-name">焦糖甜甜圈</div>
                     <span class="product-price">NT$ 450</span>
                 </div>
                 <!-- 加入購物車按鈕 -->
@@ -321,11 +322,13 @@
 
             <div class="product">
                 <img
+                    width="300"
+                    height="315"
                     src="https://hexschool.github.io/flexImgUrl/10/pic2.png"
                     alt="product photos"
                 >
                 <div class="product-content">
-                    <h2 class="product-name">焦糖甜甜圈</h2>
+                    <div class="product-name">焦糖甜甜圈</div>
                     <span class="product-price">NT$ 450</span>
                 </div>
                 <div class="add-bottom">
@@ -335,18 +338,19 @@
             <!-- 產品 第二排 -->
             <div class="product-two">
                 <img
+                    width="300"
+                    height="315"
                     src="https://hexschool.github.io/flexImgUrl/10/pic3.png"
                     alt="product photos"
                 >
                 <div class="product-content">
-                    <h2 class="product-name">焦糖甜甜圈</h2>
+                    <div class="product-name">焦糖甜甜圈</div>
                     <span class="product-price">NT$ 450</span>
                 </div>
                 <div class="add-bottom">
                     <a href="#">加入購物車</a>
                 </div>
             </div>
-
         </div>
     </div>
 </body>

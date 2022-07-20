@@ -159,33 +159,16 @@
             object-fit: cover;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            color: #829886;
-        }
-
-        h1 {
-            font-size: 25px;
-        }
-
+        /* 訂單摘要 購物清單 標題 */
         h2 {
             font-size: 25px;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
-
-        h4 {
-            font-size: 16px;
+            color: #829886;
         }
 
 
         /* 最外圍一層 */
         .wrap {
-            width: 360px;
+            max-width: 360px;
             margin: 0 auto;
         }
 
@@ -194,6 +177,7 @@
             width: 300px;
             margin: 5px 5px;
             border: 1px solid #e7eeea;
+            color: #829886;
         }
 
         /* 訂單摘要 標題 */
@@ -210,6 +194,19 @@
             padding: 15px 15px;
         }
 
+        /* 訂單摘要 內容 和 數字 */
+        .order-summary li:nth-child(1) {
+            font-size: 14px;
+        }
+
+        .order-summary li:nth-child(2) {
+            font-size: 18px;
+        }
+
+        .order-summary li:nth-child(3) {
+            font-size: 25px;
+        }
+
 
         /* 購物清單 */
         .order-list {
@@ -217,7 +214,19 @@
             width: 300px;
             border: 1px solid #e7eeea;
             margin: 20px 0 0 5px;
+            color: #829886;
         }
+
+        /* 購物清單 內容 數字 */
+        .order-list li div div {
+            font-size: 18px;
+        }
+
+        .order-list li div p {
+            font-size: 25px;
+        }
+
+
 
         /* 購物清單標題 */
         .order-list-title {
@@ -248,20 +257,20 @@
         <div class="order-summary">
             <!-- 訂單摘要 標題 -->
             <div class="order-summary-title">
-                <h1>訂單摘要</h1>
+                <h2>訂單摘要</h2>
             </div>
             <ul>
                 <li>
-                    <h4>小計</h4>
-                    <h4>NT$ 2,700</h4>
+                    <div>小計</div>
+                    <p>NT$ 2,700</p>
                 </li>
                 <li>
-                    <h3>運費</h3>
-                    <h3>NT$ 300</h3>
+                    <div>運費</div>
+                    <p>NT$ 300</p>
                 </li>
                 <li>
-                    <h2>總計</h2>
-                    <h2>NT$ 3,000</h2>
+                    <div>總計</div>
+                    <p>NT$ 3,000</p>
                 </li>
             </ul>
 
@@ -271,38 +280,44 @@
         <div class="order-list">
             <!-- 購物清單 標題 -->
             <div class="order-list-title">
-                <h1>購物清單</h1>
+                <h2>購物清單</h2>
             </div>
             <ul>
                 <li>
                     <img
+                        width="118"
+                        height="73"
                         src="https://hexschool.github.io/flexImgUrl/9/pic.png"
                         alt="Product photos"
                     >
 
                     <div>
-                        <h3>焦糖瑪卡龍 (2)</h3>
-                        <h2>NT$ 900</h2>
+                        <div>焦糖瑪卡龍 (2)</div>
+                        <p>NT$ 900</p>
                     </div>
                 </li>
                 <li>
                     <img
+                        width="118"
+                        height="73"
                         src="https://hexschool.github.io/flexImgUrl/9/pic.png"
                         alt="Product photos"
                     >
                     <div>
-                        <h3>焦糖瑪卡龍 (2)</h3>
-                        <h2>NT$ 900</h2>
+                        <div>焦糖瑪卡龍 (2)</div>
+                        <p>NT$ 900</p>
                     </div>
                 </li>
                 <li>
                     <img
+                        width="118"
+                        height="73"
                         src="https://hexschool.github.io/flexImgUrl/9/pic.png"
                         alt="Product photos"
                     >
                     <div>
-                        <h3>焦糖瑪卡龍 (2)</h3>
-                        <h2>NT$ 900</h2>
+                        <div>焦糖瑪卡龍 (2)</div>
+                        <p>NT$ 900</p>
                     </div>
                 </li>
             </ul>
