@@ -136,6 +136,11 @@ table {
 
 /* CSS Reset end */
 
+
+img {
+    object-fit: cover;
+}
+
 a,
 body {
     text-decoration: none;
@@ -145,6 +150,7 @@ body {
 a:hover {
     opacity: 0.5;
 }
+
 
 
 /* 最外圍一層 */
@@ -202,13 +208,20 @@ header li:not(:last-child):after {
 /* 導航 list */
 .nav-list {
     display: flex;
+}
 
+/* 導航 list 內 下拉選單 先隱藏 */
+.nav-list ul {
+    display: none;
+    position: absolute;
+    width: 100px;
+    background-color: #e4e4e4;
+    z-index: 10;
 }
 
 .nav li {
     margin: 0 10px 0 0;
 }
-
 
 /* 相對定位 做 hover */
 .nav ul a {
@@ -222,6 +235,7 @@ header li:not(:last-child):after {
     /* border-bottom: 3px solid transparent; */
 }
 
+/* 導航 先隱藏下滑線 */
 .nav-list li a:after {
     content: "";
     position: absolute;
@@ -232,30 +246,35 @@ header li:not(:last-child):after {
     transition: 0.5s;
 }
 
+/* 導航 hover 出現下滑線 */
 .nav-list li a:hover:after {
     width: 100%;
     border-bottom: solid 3px #22d3a7;
 }
 
+
+/* 輪播 */
 /* banner (圖) */
 .banner {
+    position: relative;
     height: 350px;
-    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
-    background-repeat: no-repeat;
-    /* 背景圖滿版 小圖強制延伸到父容器寬*/
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     margin: 0 0 60px 0;
+    overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
 }
 
 .banner h1 {
+    position: absolute;
+    width: 1200px;
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 30px;
     color: #fff;
     line-height: 50px;
     padding: 40px 20px;
+    margin: 85px 0 0 0;
+    z-index: 9;
 }
 
 /* course 課程區塊 */
@@ -268,6 +287,7 @@ header li:not(:last-child):after {
 .course-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 32%;
     line-height: 1.8;
     box-shadow: 0 1px 5px rgb(147, 147, 147);
@@ -283,7 +303,9 @@ header li:not(:last-child):after {
     padding: 20px;
 }
 
-.course-content h3 {
+.course-content h3,
+.course-content ul {
+    margin: 0 140px 0 0;
     padding: 23px 0 0 20px;
 }
 
@@ -461,4 +483,11 @@ input:focus {
 
 .footer-content a {
     color: #e12d80;
+}
+
+/* 回到 TOP 按鈕 */
+.top-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }

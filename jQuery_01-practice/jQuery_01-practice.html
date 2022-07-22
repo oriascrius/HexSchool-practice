@@ -14,7 +14,7 @@
     <!-- 網站描述文字 -->
     <meta
         name='description'
-        content='HTML、CSS 作業'
+        content='jQuery 作業'
     />
     <meta
         name='keywords'
@@ -23,11 +23,11 @@
 
     <meta
         property="og:title"
-        content="HTML、CSS 作業"
+        content="jQuery 作業"
     />
     <meta
         property="og:description"
-        content="HTML、CSS 作業"
+        content="jQuery 作業"
     >
     <meta
         property="og:type"
@@ -47,14 +47,48 @@
         href="img/hexschool_icon.png"
     >
 
-    <title>HTML、CSS 作業</title>
+    <title>jQuery 作業</title>
+
+
+    <!-- CSS -->
     <link
         rel="stylesheet"
-        href="psd_01-practice.css"
+        href="css/all.css"
     >
+
+    <!-- Swiper 輪播 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.css"
+    >
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    >
+
+    <!-- Lightbox 圖片燈箱 CSS -->
+    <link
+        rel="stylesheet"
+        href="css/lightbox.css"
+    >
+
+
+
 </head>
 
 <body>
+    <!-- 回到 TOP 按鈕  -->
+    <a
+        href="#"
+        class="top-btn"
+    >
+        <img
+            width="50"
+            height="50"
+            src="img/top-button.png"
+            alt="top-btn"
+        >
+    </a>
     <!-- 最外圍一層 -->
     <div class="container">
         <!-- 表頭 -->
@@ -96,19 +130,81 @@
             </a>
             <!-- 導航 list -->
             <ul class="nav-list">
-                <li><a href="#">首頁</a></li>
-                <li><a href="#ProductIntro">產品介紹</a></li>
-                <li><a href="#ContactUs">聯絡我們</a></li>
+                <li>
+                    <a href="#">首頁</a>
+                    <!-- 導航 list 內 下拉選單 -->
+                    <ul class="dropdown-active">
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">首頁</a></li>
+                        <li><a href="#">首頁</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">產品介紹
+                    </a>
+                    <ul class="dropdown-active">
+                        <li><a href="#ProductIntro">產品介紹</a></li>
+                        <li><a href="#ProductIntro">產品介紹</a></li>
+                        <li><a href="#ProductIntro">產品介紹</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">聯絡我們
+                    </a>
+                    <ul class="dropdown-active">
+                        <li><a href="#ContactUs">聯絡我們</a></li>
+                        <li><a href="#ContactUs">聯絡我們</a></li>
+                        <li><a href="#ContactUs">聯絡我們</a></li>
+                    </ul>
+                </li>
+
             </ul>
         </nav>
 
         <!-- banner (圖) -->
+        <!-- 輪播 -->
         <div class="banner">
             <h1>
                 六角學院
                 <br>
                 讓您奠定良好的前端基礎
             </h1>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img
+                            width="1200"
+                            height="350"
+                            src="img/banner.png"
+                            alt="banner"
+                        >
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            width="1200"
+                            height="350"
+                            src="img/pexels-cottonbro-3584996.jpg"
+                            alt="banner"
+                        >
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            width="1200"
+                            height="350"
+                            src="img/pexels-jess-bailey-designs-1097930.jpg"
+                            alt="banner"
+                        >
+                    </div>
+                </div>
+                <!-- 分頁器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 導航按紐 -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- 滾動條 -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
         </div>
 
         <!-- course 課程區塊 -->
@@ -118,12 +214,19 @@
         >
             <!-- course 內區塊 -->
             <li class="course-content">
-                <img
-                    width="300"
-                    height="170"
-                    src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png"
-                    alt="HTML"
+                <a
+                    href="img/html.png"
+                    data-lightbox="image-1"
+                    data-title="Html 5 基礎教學"
                 >
+                    <img
+                        width="300"
+                        height="170"
+                        src="img/html.png"
+                        alt="HTML"
+                    >
+                </a>
+                <!-- src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" -->
                 <h2>Html 5 基礎教學</h2>
                 <p>主流前端網站設計的基礎就在六角學
                     院,在這裡不在是填鴨式教學,而是透
@@ -132,12 +235,18 @@
                     學習業界主流的開發方法。</p>
             </li>
             <li class="course-content">
-                <img
-                    width="300"
-                    height="170"
-                    src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png"
-                    alt="RWD"
+                <a
+                    href="img/rwd.png"
+                    data-lightbox="image-2"
+                    data-title="響應式網站設計"
                 >
+                    <img
+                        width="300"
+                        height="170"
+                        src="img/rwd.png"
+                        alt="RWD"
+                    >
+                </a>
                 <h2>響應式網站設計</h2>
                 <p>響應式網站設計(Responsive web
                     design),目前大多使用者均是以手機
@@ -146,12 +255,18 @@
                     方法,讓學生瞭解行動版開發技巧。</p>
             </li>
             <li class="course-content">
-                <img
-                    width="300"
-                    height="170"
-                    src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png"
-                    alt="jQuery"
+                <a
+                    href="img/jQuery.png"
+                    data-lightbox="image-3"
+                    data-title="jQuery實戰教學"
                 >
+                    <img
+                        width="300"
+                        height="170"
+                        src="img/jQuery.png"
+                        alt="jQuery"
+                    >
+                </a>
                 <h2>jQuery實戰教學</h2>
                 <h3>本課程有以下特色</h3>
                 <ul>
@@ -290,7 +405,30 @@
                 <p>電話 : <a href="tel:0999123456">0999123456</a></p>
             </div>
         </div>
+
+
+
     </div>
+
+
+
+    <!-- jQuery -->
+    <script src="javascript/jquery-3.6.0-min.js"></script>
+
+    <!-- JS -->
+    <script src="javascript/all.js"></script>
+
+    <!-- Swiper 輪播 js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"> </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js.map"> </script>
+
+    <!-- Lightbox 照片燈箱 js -->
+    <script src="javascript/lightbox.js"></script>
+
+
+
+
 </body>
 
 </html>
