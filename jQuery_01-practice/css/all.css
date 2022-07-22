@@ -211,12 +211,14 @@ header li:not(:last-child):after {
 }
 
 /* 導航 list 內 下拉選單 先隱藏 */
+/* banner h1  z-index: 9;  這裡給 10 覆蓋上去 */
 .nav-list ul {
     display: none;
     position: absolute;
     width: 100px;
     background-color: #e4e4e4;
     z-index: 10;
+    margin: 1px 0 0 0;
 }
 
 .nav li {
@@ -257,9 +259,9 @@ header li:not(:last-child):after {
 /* banner (圖) */
 .banner {
     position: relative;
-    height: 350px;
     margin: 0 0 60px 0;
     overflow: hidden;
+    /* height: 360px; */
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
