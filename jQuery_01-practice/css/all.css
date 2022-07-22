@@ -305,15 +305,14 @@ header li:not(:last-child):after {
     padding: 20px;
 }
 
-.course-content h3,
-.course-content ul {
-    margin: 0 140px 0 0;
-    padding: 23px 0 0 20px;
+.course-content div {
+    padding: 10px 0 10px 0;
+
 }
 
 .course-content ul {
     list-style: disc;
-    padding: 0 0 20px 50px;
+    padding: 0 0 0 30px;
 }
 
 
