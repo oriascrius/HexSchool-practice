@@ -285,13 +285,13 @@ header li:not(:last-child):after {
 }
 
 .course-content div {
-    padding: 10px 0 10px 0;
+    padding: 10px 0 0 0;
 
 }
 
 .course-content ul {
     list-style: disc;
-    padding: 0 0 0 30px;
+    padding: 0 0 20px 30px;
 }
 
 
