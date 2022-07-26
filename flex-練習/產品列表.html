@@ -207,21 +207,15 @@
         /* 右邊區塊 產品 */
         .product-block {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
             width: 620px;
             margin: 5px 0 0 15px;
+            gap: 20px;
         }
 
         /* 產品 */
         .product {
             width: 300px;
-        }
-
-        /* 產品 第二排 */
-        .product-two {
-            width: 300px;
-            margin: 30px 0 0 0;
         }
 
         /* 產品 內容 */
@@ -230,7 +224,6 @@
             height: 65px;
             font-size: 20px;
             color: #415b47;
-            font-weight: 700;
         }
 
         .product-name {
@@ -256,18 +249,17 @@
             background-color: #e7eeea;
             font-size: 25px;
             color: #415b47;
-            font-weight: 700;
             line-height: 85px;
             text-align: center;
         }
 
-        .add-bottom a {
+        .add-bottom {
             display: block;
             width: 300px;
             height: 85px;
         }
 
-        .add-bottom a:hover {
+        .add-bottom:hover {
             color: rgb(0, 249, 58);
             background-color: #ffffff;
         }
@@ -315,9 +307,10 @@
                     <span class="product-price">NT$ 450</span>
                 </div>
                 <!-- 加入購物車按鈕 -->
-                <div class="add-bottom">
-                    <a href="#">加入購物車</a>
-                </div>
+                <a
+                    href="#"
+                    class="add-bottom"
+                >加入購物車</a>
             </div>
 
             <div class="product">
@@ -331,12 +324,13 @@
                     <div class="product-name">焦糖甜甜圈</div>
                     <span class="product-price">NT$ 450</span>
                 </div>
-                <div class="add-bottom">
-                    <a href="#">加入購物車</a>
-                </div>
+                <a
+                    href="#"
+                    class="add-bottom"
+                >加入購物車</a>
             </div>
             <!-- 產品 第二排 -->
-            <div class="product-two">
+            <div class="product">
                 <img
                     width="300"
                     height="315"
@@ -347,9 +341,12 @@
                     <div class="product-name">焦糖甜甜圈</div>
                     <span class="product-price">NT$ 450</span>
                 </div>
-                <div class="add-bottom">
-                    <a href="#">加入購物車</a>
-                </div>
+
+                <a
+                    href="#"
+                    class="add-bottom"
+                >加入購物車</a>
+
             </div>
         </div>
     </div>
