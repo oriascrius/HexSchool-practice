@@ -54,6 +54,18 @@ $(document).ready(function () {
     });
 
 
+    // 到 1000 位置才出現 top 按鈕
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 1000) {
+            $(".top-btn").fadeIn();
+        } else {
+            $(".top-btn").fadeOut();
+        }
+    }
+    $(window).scroll(showBtnCondition);
+
+
+
     // 回到 top 按鈕
     $(".top-btn").click(function (event) {
         event.preventDefault();

@@ -198,6 +198,20 @@ header li:not(:last-child):after {
     opacity: 1;
 }
 
+/* 圖片取代文字 logo */
+.nav h1 a {
+    width: 224px;
+    height: 50px;
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    /* 讓文字超出原本區塊 */
+    text-indent: 101%;
+    /* 超過後的部分隱藏 */
+    overflow: hidden;
+    /* 不換行 */
+    white-space: nowrap;
+}
+
 /* 導航 list */
 .nav-list {
     display: flex;
@@ -247,7 +261,7 @@ header li:not(:last-child):after {
     margin: 0 0 60px 0;
 }
 
-.banner h1 {
+.banner h2 {
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 30px;
     color: #fff;
@@ -277,15 +291,15 @@ header li:not(:last-child):after {
     padding: 20px;
 }
 
-.course-content div {
-    padding: 10px 0 0 0;
+.course-content h3 {
+    padding: 10px 0 10px 0;
 
 }
 
 .course-content ol {
     list-style: disc;
     text-align: left;
-    padding: 10px 0 0 90px;
+    padding: 0 100px 20px 120px;
 }
 
 
@@ -411,7 +425,7 @@ input:focus {
     background-color: #00cc99;
     color: #d6d6d6;
     font-size: 16px;
-    margin: 0 0 0 350px;
+    align-self: flex-end;
     border-radius: 10px;
     border: 1px solid transparent;
 
@@ -445,7 +459,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    padding: 20px 0 20px;
 }
 
 
